@@ -24,11 +24,12 @@
             <div class="sidebar">
                 <h2>Мой профиль</h2>
                 <ul>
-                    <li><a href="#">Мои развлечения</a></li>
-                    <li><a href="#">Мои сообщения</a></li>
-                    <li><a href="#">История заказов</a></li>
-                    <li><a href="#">Мои отзывы</a></li>
-                    <li><a href="#">Настройки</a></li>
+                    <li><a href="#" data-tab="favorites" class="active">❤️ Избранное</a></li>
+                    <li><a href="#" data-tab="entertainment">Мои развлечения</a></li>
+                    <li><a href="#" data-tab="messages">Мои сообщения</a></li>
+                    <li><a href="#" data-tab="orders">История заказов</a></li>
+                    <li><a href="#" data-tab="reviews">Мои отзывы</a></li>
+                    <li><a href="#" data-tab="settings">Настройки</a></li>
                     <li><a href="#">Условия пользования</a></li>
                     <li><a href="#">Огромный пенис</a></li>
                     <li><a href="#">Не очень ограмный пенис</a></li>
@@ -39,7 +40,35 @@
             </div>
 
             <div class="content">
-                    <h1>Здесь пока ничего нет</h1>
+                <!-- Вкладка Избранное -->
+                <div id="tab-favorites" class="tab-content active">
+                    <h1>Избранное</h1>
+                    <div class="favorites-grid" id="favoritesGrid">
+                        <div class="loading-favorites">Загрузка избранных объявлений...</div>
+                    </div>
+                </div>
+                
+                <!-- Заглушки для других вкладок -->
+                <div id="tab-entertainment" class="tab-content">
+                    <h1>Мои развлечения</h1>
+                    <p>Контент в разработке...</p>
+                </div>
+                <div id="tab-messages" class="tab-content">
+                    <h1>Мои сообщения</h1>
+                    <p>Контент в разработке...</p>
+                </div>
+                <div id="tab-orders" class="tab-content">
+                    <h1>История заказов</h1>
+                    <p>Контент в разработке...</p>
+                </div>
+                <div id="tab-reviews" class="tab-content">
+                    <h1>Мои отзывы</h1>
+                    <p>Контент в разработке...</p>
+                </div>
+                <div id="tab-settings" class="tab-content">
+                    <h1>Настройки</h1>
+                    <p>Контент в разработке...</p>
+                </div>
             </div>
         </div>
     </main>
